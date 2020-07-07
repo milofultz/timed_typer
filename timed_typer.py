@@ -4,10 +4,8 @@ import time
 
 
 def word_loader(filename):
-	lst = []
 	with open(filename, 'r') as words:
-		for word in words:
-			lst.append(word.strip())
+		lst = [word.strip() for word in words]
 	return lst
 
 def word_picker(word_lst):
